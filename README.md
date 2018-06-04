@@ -2,7 +2,7 @@
 
 Rappi: Frontend Developer Challenge
 
-###Pasos previos para ver el proyecto
+### Pasos previos para ver el proyecto
 
 	-Tener instalado [XAMPP](https://www.apachefriends.org/es/index.html)
 
@@ -16,7 +16,7 @@ Rappi: Frontend Developer Challenge
 
 	-Listo
 
-###Información adicional
+### Información adicional
 	
 	Este challenge fue realizado con el framework AngularJS.
 
