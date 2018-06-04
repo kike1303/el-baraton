@@ -1,0 +1,63 @@
+<!-- BREADCRUMB -->
+	<div id="breadcrumb">
+		<div class="container">
+			<ul class="breadcrumb">
+				<li><a>Inicio</a></li>
+				<li class="active">Carrito</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /BREADCRUMB -->
+<!-- section -->
+	<div class="section">
+		<!-- container -->
+		<div class="container">
+			<!-- row -->
+			<div class="row">
+				<div class="col-md-12">
+					<div class="order-summary clearfix">
+						<div class="section-title">
+							<h3 class="title">Carrito de compras</h3>
+						</div>
+						<table class="shopping-cart-table table">
+							<thead>
+								<tr>
+									<th>Productos</th>					
+									<th class="text-center">Precio</th>
+									<th class="text-center">Cantidad</th>
+									<th class="text-center">Total</th>
+									<th class="text-right"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr ng-repeat="prod in productsAdd">					
+									<td class="details">
+										<a href="#">{{prod.name}}</a>
+										<ul>							
+											<li><span>Cantidad en almacén: {{prod.quantity}}</span></li>
+										</ul>
+									</td>
+									<td class="price text-center"><strong>{{prod.price}}</strong></td>
+									<td class="qty text-center"><input ng-model="prod_qty" ng-change="prodQuantity(prod,prod_qty)" class="input" type="number" min="0" max="{{prod.quantity}}" ng-value="prod_qty"></td>
+									<td class="total text-center"><strong class="primary-color">{{prod.total | currency}}</strong></td>
+									<td class="text-right"><button ng-click="deleteProd(prod)" class="main-btn icon-btn"><i class="fa fa-close"></i></button></td>
+								</tr>				
+							</tbody>
+							<tfoot>
+								
+								<tr>
+									<th class="empty" colspan="3"></th>
+									<th>TOTAL</th>
+									<th colspan="2" class="total">{{total_purchase | currency}}</th>
+								</tr>
+							</tfoot>
+						</table>
+						<div class="pull-right">
+							<button class="primary-btn" ng-click="comprar()">Comprar</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>

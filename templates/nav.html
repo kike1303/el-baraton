@@ -1,0 +1,73 @@
+<!-- NAVIGATION -->
+	<div id="navigation">
+		<!-- container -->
+		<div class="container">
+			<div id="responsive-nav">
+				<!-- category nav -->
+				<div class="category-nav show-on-click" >
+					<span class="category-header">Categorías <i class="fa fa-list"></i></span>
+					<ul class="category-list">
+						
+						<li class="dropdown side-dropdown" ng-repeat="category in categories">
+							<a  href="" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">{{category.name}} <i class="fa fa-angle-right"></i></a>
+							<div class="custom-menu">
+								<div class="row">
+									<div class="col-md-4" ng-repeat="subcategory in category.sublevels">
+										<ul class="list-links">
+											<li>
+												<h3 class="list-links-title" ng-click="categorySelected(subcategory)"><a href="">{{subcategory.name}}</a></h3>
+											</li>
+											<li ng-repeat="subcategory1 in subcategory.sublevels"><a href="" ng-click="categorySelected(subcategory1)">{{subcategory1.name}}</a>
+												<ul>
+													<li ng-repeat="subcategory2 in subcategory1.sublevels" style="padding-left: 25px;" ng-click="categorySelected(subcategory2)"><a href="">{{subcategory2.name}}</a></li>
+												</ul>
+											</li>
+											
+										</ul>						
+										
+										<hr class="hidden-md hidden-lg">
+									</div>									
+								</div>
+							</div>
+						</li>
+						
+					</ul>
+				</div>
+				<!-- /category nav -->
+
+				<!-- menu nav -->
+				<div class="menu-nav">
+					<span class="menu-header">Menu <i class="fa fa-bars"></i></span>
+					<ul class="menu-list">
+						<li><a href="" ng-click="home()">Inicio</a></li>
+						<li><a href="" ng-click="allProducts()">Todos</a></li>
+						<li ng-repeat="category in categories" class="dropdown mega-dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true" ng-click="categorySelected(category)">{{category.name}}</a>
+							<!-- <div class="custom-menu">
+								<div class="row">
+									<div class="col-md-4"  ng-repeat="subcategory in category.sublevels">
+										<ul class="list-links">
+											<li>
+												<h3 class="list-links-title" ng-click="categorySelected(subcategory)">{{subcategory.name}}</h3></li>
+											<li ng-repeat="subcategory1 in subcategory.sublevels" ng-click="categorySelected(subcategory1)"><a >{{subcategory1.name}}</a>
+												<ul>
+													<li ng-repeat="subcategory2 in subcategory1.sublevels" style="padding-left: 25px;" ng-click="categorySelected(subcategory2)"><a >{{subcategory2.name}}</a></li>
+												</ul>
+											</li>											
+										</ul>
+										<hr class="hidden-md hidden-lg">
+									</div>
+									
+								</div>
+								
+							</div> -->
+						</li>
+						
+						
+					</ul>
+				</div>
+				<!-- menu nav -->
+			</div>
+		</div>
+		<!-- /container -->
+	</div>
+	<!-- /NAVIGATION -->

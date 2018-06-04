@@ -1,0 +1,39 @@
+.dropdown-toggle:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; 
+ }
+ .ocultar {
+ 	opacity: 0.4;
+ }
+ .filter-price .aside-title {
+ 	text-align: left;
+ }
+ .btn-filter-price {
+ 	color: #FFF;
+    background-color: #F8694A;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+ }
+ .btn-filter-price:hover {
+ 	color: #FFF;
+ 	background-color: #30323A;
+ }
+ .product-single {
+	background-color: #f5f5f5;
+	border: 1px solid #e3e3e3;
+	border-radius: 4px;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+
+ } 
+ .banner-info {
+ 	background-color: rgba(117,117,117,0.8); 
+ 	padding: 30px;
+ }
+ .img-info {
+ 	background-color: rgba(117,117,117,0.6); 
+ 	padding: 15px;
+ }
+ .img-info h2 {
+ 	margin-bottom: 0;
+ }
