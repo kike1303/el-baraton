@@ -4,7 +4,7 @@ Rappi: Frontend Developer Challenge
 
 El resultado del Challenge se puede ver en [El-baraton](https://el-baraton-1.firebaseapp.com)
 
-### Pasos previos para ver el proyecto
+### Pasos previos para ver el proyecto localmente
 
    - Tener instalado [XAMPP](https://www.apachefriends.org/es/index.html)
 
@@ -56,7 +56,7 @@ El resultado del Challenge se puede ver en [El-baraton](https://el-baraton-1.fir
 
    - Se usaron controladoradores para cada vista, así como para la barra de navegación y el carrito superior. Esto con el fin de tener un buen control de las variables en cada sección
 
-   - La navegación entre páginas es controlado con angular-route
+   - La navegación entre páginas es controlada con angular-route
 
    - Para filtrar, ordenar y buscar los productos, se usaron los **filter** de AngularJS
 
