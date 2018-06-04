@@ -1,10 +1,7 @@
 myApp.controller('homeCtrl', function($scope,$http, $timeout,$rootScope,$location){ 
 
-    // $timeout(function(){
-    //  loadMainJS();
-    // },100);
 
-     // HOME SLICK
+  // HOME SLICK
   $('#home-slick').slick({
     autoplay: true,
     infinite: true,

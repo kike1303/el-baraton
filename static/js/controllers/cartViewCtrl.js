@@ -5,14 +5,13 @@ myApp.controller('cartViewCtrl', function($scope, $rootScope, $deleteProduct,
 		$rootScope.total_purchase = 0;
 	}	
 
+	
 	$scope.prod_qty = 1;
 	$scope.prodQuantity = function(prod,prod_qty){
 		
 		var prod_price = Number(prod['price'].replace('$','').replace(',','.'));
-		prod.order_qty = 1;
 		if (prod_qty > prod.quantity){			
-			prod.order_qty = prod.quantity;
-			prod.total = prod_price;	
+				prod.total = prod_price;	
 		}else {
 			prod.total = prod_qty*prod_price;
 		}	
@@ -21,6 +20,7 @@ myApp.controller('cartViewCtrl', function($scope, $rootScope, $deleteProduct,
 		angular.forEach($rootScope.productsAdd, function(prod){
 			$rootScope.total_purchase += prod.total;
 		});	
+		$localStorage.prod_qty = $scope.prod_qty;
 	}
    
    $scope.deleteProd = function(prod){

@@ -1,9 +1,5 @@
 myApp.controller('cartCtrl', function($scope,$timeout, $rootScope,
 										$deleteProduct,$localStorage){ 
-
-    // $timeout(function(){
-    //  loadMainJS();
-    // },100);
     
 	$rootScope.number_prod_add = $localStorage.number_prod_add;	
 	if(!$rootScope.number_prod_add){
