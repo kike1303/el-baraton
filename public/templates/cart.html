@@ -38,7 +38,7 @@
 										</ul>
 									</td>
 									<td class="price text-center"><strong>{{prod.price}}</strong></td>
-									<td class="qty text-center"><input ng-model="prod_qty" ng-change="prodQuantity(prod,prod_qty)" class="input" type="number" min="0" max="{{prod.quantity}}" ng-value="prod_qty"></td>
+									<td class="qty text-center"><input ng-model="prod_qty" ng-change="prodQuantity(prod,prod_qty)" class="input" type="number" min="0" max="{{prod.quantity}}" ng-value="prod.prod_qty"></td>
 									<td class="total text-center"><strong class="primary-color">{{prod.total | currency}}</strong></td>
 									<td class="text-right"><button ng-click="deleteProd(prod)" class="main-btn icon-btn"><i class="fa fa-close"></i></button></td>
 								</tr>				

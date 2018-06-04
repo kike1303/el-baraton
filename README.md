@@ -2,6 +2,8 @@
 
 Rappi: Frontend Developer Challenge
 
+El resultado del Challenge se puede ver en [El-baraton](https://el-baraton-1.firebaseapp.com)
+
 ### Pasos previos para ver el proyecto
 
    - Tener instalado [XAMPP](https://www.apachefriends.org/es/index.html)
@@ -12,7 +14,7 @@ Rappi: Frontend Developer Challenge
 	
    - Ejecutar un servidor local con XAMPP
 
-   - En el navegador de su preferencia, ir a "127.0.0.1/el-baraton/"
+   - En el navegador de su preferencia, ir a "127.0.0.1/el-baraton/public/"
 
    - Listo
 
@@ -31,6 +33,8 @@ Rappi: Frontend Developer Challenge
    - Como base para los estilos de la página, se usó una plantilla gratuita llamada E-Shop, obtenida de [colorlib](https://colorlib.com/wp/free-bootstrap-ecommerce-website-templates/)
 
    - Las imágenes fueron sacadas de google images
+
+   - Se usó Firebase como hosting para mostrar el resultado del proyecto ([El-baraton](https://el-baraton-1.firebaseapp.com))
 
    - En el proyecto se puede observar las funcionalidades básicas de un e-commerce:
 
@@ -59,5 +63,7 @@ Rappi: Frontend Developer Challenge
    - Se usó local storage para el almacenamiento de los productos del carrito y así no perder la información al recargar la página
 
    - Se usó el concepto de servicios para tener mismas funcionalidades en varios controladores
+
+
 
 
